@@ -1,3 +1,3 @@
 export type GameScreenProps = {
-    background: string
+    background?: string
 } & React.HTMLAttributes<HTMLDivElement>

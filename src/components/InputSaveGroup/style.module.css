@@ -1,0 +1,30 @@
+
+.textInput
+{
+    border-radius: 12px;
+    border: 2px solid #67d7cc;
+    padding: 8px 12px
+}
+
+.inputButton
+{
+    border-radius: 12px;
+    border: 2px solid #67d7cc;
+    padding: 8px 12px;
+    background-color:#67d7cc;
+    color:white;
+}
+
+.inputGroup .textInput:first-child,
+.inputGroup .inputButton:first-child
+{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.inputGroup .textInput:last-child,
+.inputGroup .inputButton:last-child
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
