@@ -6,8 +6,10 @@ import Button from "../../components/core/Button"
 import Input from "../../components/core/Input"
 import InputSaveGroup from "../../components/InputSaveGroup"
 import useUserName from "../../hooks/useUserName"
+import GameViewport from "./components/GameViewport"
+import GameMap from "./components/GameMap"
 
-export default function MainMenu() {
+export default function MainScreen() {
 
     // const [name, setName] = useState("Dios");
     const [name, setName] = useUserName();
@@ -60,6 +62,17 @@ export default function MainMenu() {
                         />
                     </div>
                 </div>
+            }
+            {
+                nameInputted &&
+
+
+                <GameViewport
+                    xScroll={0}
+                    yScroll={0}
+                >
+                    <GameMap/>
+                </GameViewport>
             }
         </GameScreen>
     )

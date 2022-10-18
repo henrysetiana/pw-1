@@ -1,0 +1,18 @@
+.tileGrid
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.tileRow
+{
+    display: flex;
+    height: 48px;
+}
+
+.characterContainer
+{
+    position: absolute;
+    top:96px;
+    left: 48px;
+}
