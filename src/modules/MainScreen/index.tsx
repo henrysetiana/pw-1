@@ -39,21 +39,20 @@ export default function MainScreen() {
     ).current;
     
     useEffect(()=>{
-        console.log("asd");
         if(name!="Dios")
             debouncedPersistDios();
             
         ()=>{
         }
-    },[name])
+    },[name, debouncedPersistDios])
     
     return (
-        <GameScreen>
+        <GameScreen background="white" >
             {
                 !nameInputted &&
                 <div className={classes.centerContentContainer}>
                     <div className={classes.card+" "+classes.centerMargin}>
-                        <h3>What's your name?</h3>
+                        <h3>What&apos;s your name?</h3>
                         <InputSaveGroup
                             onSave={onNameSave}
                             value={name}

@@ -1,10 +1,13 @@
 import '../styles/globals.css'
 import {UserNameProvider} from "../src/hooks/useUserName";
+import {FrameTickerProvider} from "../src/hooks/useFrameTicker";
 
 function MyApp({ Component, pageProps }) {
 
   return <UserNameProvider>
-    <Component {...pageProps} />
+    <FrameTickerProvider>
+      <Component {...pageProps} />
+    </FrameTickerProvider>
   </UserNameProvider>
 }
 
