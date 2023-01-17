@@ -10,10 +10,15 @@ export default function MainMenu() {
     const onButtonClick = () => {
         router.push("/mainScreen")
     }
+
+    const onLeaderboardClick = () => {
+        router.push("/leaderboard")
+    }
     return (
         <GameScreen background="red">
             <div className={classes.centerContentContainer}>
                 <Button onClick={onButtonClick} style={{margin:"auto"}}>Start Game</Button>
+                <Button onClick={onLeaderboardClick} style={{margin:"auto"}}>Leaderboard</Button>
             </div>
         </GameScreen>
     )

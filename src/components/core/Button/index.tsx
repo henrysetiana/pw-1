@@ -10,7 +10,6 @@ export default function Button(props) {
 
     return (
         <a className={classes.button+" "+props.className} onClick={()=>{
-            alert('welcome');
             props.onClick();
         }}
         {
